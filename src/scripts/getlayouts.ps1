@@ -1,0 +1,1 @@
+ls lib/html/lib/layouts | select -ExpandProperty name| foreach {$_} | select-string -Pattern "(.*)\.html" | select -ExpandProperty matches | select -ExpandProperty groups | where name -eq '1' | select -ExpandProperty value

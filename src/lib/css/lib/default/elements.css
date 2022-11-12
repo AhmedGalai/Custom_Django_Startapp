@@ -1,0 +1,41 @@
+section, header, footer, main{
+	width: 100%;
+}
+img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
+.icon {
+	width : 5vw;
+	height: 5vw;
+	max-width: 3rem;
+	max-height: 3rem;
+}
+
+form{
+	width: 80%;
+	max-width: var(--size-content-3);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/*flex-direction: column;*/
+	flex-wrap: wrap;
+	gap: 1rem;
+	margin: 6px;
+	padding: 1rem;
+	box-shadow: 0 0 4px;
+	border-radius: var(--radius-2);
+	/*background: var(--gray-9);*/
+	margin-bottom: var(--size-3);
+}
+
+form input{
+	box-shadow: 0 0 2px;
+}
+
+form :is(input[type="submit"],button){
+	width: 60%;
+}

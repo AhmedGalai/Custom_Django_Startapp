@@ -1,0 +1,49 @@
+input, button, select {
+	font-size: var(--font-size-min);
+	border-radius: var(--radius-curvy);
+	padding: var(--padding-sm);
+	accent-color: currentColor;
+	border: none;
+	display: inline-block;
+	/*background: white;*/ 
+	/*box-shadow: var(--shadow-sm);*/
+}
+input:is([type="submit"],[type="reset"]), button{
+	width: fit-content;
+	border-radius: 100vmax;
+	min-width: 3rem;
+	padding: 0.2em 0.5em;
+	background: none;
+	outline: none;
+	border: none;
+}
+select{
+	min-width: var(--size-content-1);
+	text-align: center;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+/*.toggle>input:is([type="checkbox"],[type="radio"]){
+	
+}*/
+
+.link, .toggle, button, select, input:is([type="reset"],[type="submit"],[type="checkbox"],[type="radio"],[type="date"],[type="datetime-local"],[type="range"],[type="color"]){
+	transform: scale(1);
+	transition: all 0.2s;
+	text-decoration: none;
+	color: inherit;
+	cursor: pointer;
+}
+:is(.link, .toggle, button, input:is([type="reset"],[type="submit"],[type="checkbox"],[type="radio"]) ):is(:hover,:focus-visible,:checked){
+	transform: scale(1.05);
+	color: inherit; 
+}
+
+
+body:not(.darkmode) #darkmode-toggle>.on, body:is(.darkmode) #darkmode-toggle>.off, .menu:is(.active)>.menu-toggle>.off, .menu:not(.active)>.menu-toggle>.on{
+	display: none;
+}
+body:is(.darkmode) #darkmode-toggle>.on, body:not(.darkmode) #darkmode-toggle>.off, .menu:is(.active)>.menu-toggle>.on, .menu:not(.active)>.menu-toggle>.off{
+	display: block;
+}

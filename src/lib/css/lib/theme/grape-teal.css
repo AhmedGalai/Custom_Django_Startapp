@@ -1,0 +1,19 @@
+/*--- only right hand side values should be changed ---*/
+:root{ 
+	--theme-neutral-light: var(--gray-0);
+	--theme-neutral-dark: var(--gray-9);
+	--theme-primary-light: var(--grape-4);
+	--theme-primary-dark: var(--grape-9);
+	--theme-secondary-light: var(--teal-4);
+	--theme-secondary-dark: var(--teal-9);
+	--theme-success-light: var(--green-4);
+	--theme-success-dark: var(--green-9);
+	--theme-error-light: var(--red-4);
+	--theme-error-dark: var(--red-9);
+	--theme-link-light: var(--blue-4);
+	--theme-link-dark: var(--blue-9);
+	--theme-gradient-dark: linear-gradient(45deg, var(--theme-primary-dark), var(--theme-secondary-dark));
+	--theme-gradient-light: linear-gradient(45deg, var(--theme-primary-light), var(--theme-secondary-light));
+	--theme-transparent-light: rgba(255,255,255,0.25);
+	--theme-transparent-dark: rgba(0,0,0,0.25);
+}

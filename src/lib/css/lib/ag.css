@@ -1,0 +1,75 @@
+/* Reset */
+@import "./resets/reset.css";
+/*@import "./resets/normalize.css";*/
+
+/* Open Props */
+@import "https://unpkg.com/open-props";
+
+/* Default */
+@import "./default/inputs.css";
+@import "./default/elements.css";
+
+/*Theme*/
+/*@import "./theme/gray-yellow.css";*/
+@import "./theme/theme.css";
+@import "./theme/darkmode.css";
+
+/* Utility */
+@import "./utility/util.css";
+
+/* Layout */
+@import "./layout/containers.css";
+
+:root{
+	color-scheme: light;
+	--font-family-0: var(--font-sans);
+	--font-weight-sm: var(--font-weight-2);
+	--font-weight-md: var(--font-weight-4);
+	--font-weight-lg: var(--font-weight-6);
+	--font-size-min: var(--font-size-2);
+	--font-size-sm: var(--font-size-4);
+	--font-size-md: var(--font-size-6);
+	--font-size-lg: var(--font-size-8);
+	--padding-sm: var(--size-1) var(--size-2);
+	--padding-md: var(--size-2) var(--size-4);
+	--padding-lg: var(--size-4) var(--size-7);
+	--font-size-fluid-sm: var(--font-size-fluid-00);
+	--font-size-fluid-md: var(--font-size-fluid-1);
+	--font-size-fluid-lg: var(--font-size-fluid-2);
+	--shadow-sm: var(--shadow-3);
+	--shadow-md: var(--shadow-4);
+	--shadow-lg: var(--shadow-6);
+	--fade-in: var(--animation-fade-in) forwards;
+	--fade-out: var(--animation-fade-out) forwards;
+	--radius-curvy: var(--radius-2);
+	--radius-curvier: var(--radius-3);
+}
+
+*, *::before, *::after{
+	/*box-sizing: border-box;*/
+	inset: 0;
+	margin: 0;
+	/*color: inherit;*/
+	/*font-weight: inherit;*/
+	/*text-decoration: none;*/
+	/*list-style: none;*/
+	/*background: none;*/
+	text-overflow: ellipsis;
+	/*overflow: hidden;*/ 
+	/*padding: 0;*/
+	font-size: inherit;
+}
+
+html {
+	font-family: var(--font-family-0);
+	font-weight: var(--font-weight-sm);
+	/*height: 100vh;*/
+}
+
+body {
+	/*height: 100%;*/
+	/*--bg: var(--gradient-light);*/
+	/*--fg: var(--neutral-dark);*/
+	background: var(--neutral-light);
+	color: var(--secondary-dark);
+}

@@ -1,0 +1,1 @@
+ls lib/css/lib/theme | select -ExpandProperty name| foreach {$_} | select-string -Pattern "(.*)\.css" | select -ExpandProperty matches | select -ExpandProperty groups | where name -eq '1' | select -ExpandProperty value | foreach {if(!$_.Equals("darkmode")){$_}}
